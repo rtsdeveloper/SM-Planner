@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+button {
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+label {
+    display: inline-block;
+}
+
+iframe {
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+@font-face {
+    font-family: maj;
+    src: url(../fonts/majestibannermedium-n5.woff);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: mr;
+    src: url(../fonts/montserrat-v25-latin-regular.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: mb;
+    src: url(../fonts/montserrat-v25-latin-700.woff2);
+    font-display: swap;
+}
+
+.maj {
+    font-family: maj, serif;
+}
+
+body {
+    font-family: mr, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -15px;
+}
+
+.row [class^="col"] {
+    flex: 1 0 auto;
+    padding: 0 15px;
+}
+
+.row .col-1 {
+    flex-basis: 8.33%;
+}
+
+.row .col-2 {
+    flex-basis: 16.66%;
+}
+
+.row .col-3 {
+    flex-basis: 25%;
+    max-width: 33.33%;
+}
+
+.row .col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.row .col-5 {
+    flex-basis: 41.66%;
+}
+
+.row .col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.row .col-7 {
+    flex-basis: 58.33%;
+}
+
+.row .col-8 {
+    flex-basis: 66.66%;
+}
+
+.row .col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.row .col-10 {
+    flex-basis: 83.33%;
+}
+
+.row .col-11 {
+    flex-basis: 91.11%;
+}
+
+.row .col-12 {
+    flex-basis: 100%;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* layout */
+.wrap-1 {
+    background: #213532;
+    color: #fff;
+    padding: 13px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 22px;
+}
+
+nav ul li a {
+    display: block;
+    width: 146px;
+    line-height: 39px;
+    border: 3px solid;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+nav ul li:last-child a {
+    color: #e0c48f;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background: #10baae;
+    border-color: #10baae;
+}
+
+.wrap-1 img {
+    width: 134px;
+    height: 96px;
+}
+
+.wrap-2 {
+    text-align: center;
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    padding: 140px 0;
+}
+
+.wrap-2 p {
+    color: #fff;
+    font-size: 100px;
+    line-height: 1.2;
+    text-shadow: 0 5px 10px #4d4d4d;
+}
+
+.wrap-2 a {
+    display: inline-block;
+    width: 185px;
+    background: #fff;
+    color: #516d69;
+    font: bold 14px/50px mb, sans-serif;
+}
+
+.wrap-3 {
+    background: #213532;
+    color: #e0c48f;
+    font-size: 30px;
+    line-height: 151px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.wrap-4 {
+    background: url(../img/bg2.jpg) no-repeat #f0f0f2;
+    padding: 70px 0;
+}
+
+h2 {
+    color: #436d67;
+    font-size: 40px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+}
+
+.txt {
+    font-size: 13px;
+    line-height: 24px;
+    color: black;
+}
+
+.wrap-4 a {
+    display: inline-block;
+    width: 185px;
+    color: #516d69;
+    font: bold 14px/44px mb, sans-serif;
+    border: 3px solid;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.wrap-5 {
+    padding: 95px 0;
+    text-align: center;
+}
+
+.wrap-5 img {
+    width: 76px;
+    height: 70px;
+}
+
+h3 {
+    color: #436d67;
+    font-size: 30px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.wrap-5 .txt {
+    text-align: left;
+}
+
+.wrap-6 {
+    background: #f0f0f2;
+    text-align: center;
+    padding: 65px 0;
+}
+
+.wrap-6 iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1.77;
+}
+
+.wrap-7 {
+    background: #213532;
+    color: #c7cccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social li {
+    margin: 10px;
+}
+
+.social li a {
+    color: inherit;
+    font-size: 26px;
+}
+
+.wrap-7 p {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-7 p a {
+    color: inherit;
+    padding: 0 10px;
+}
+
+.wrap-7 p a:not(:first-child) {
+    border-left: 1px solid;
+}
+
+.wrap-8 {
+    background: #162724;
+    color: #b0b0b0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:1220px) {}
+
+@media screen and (max-width:980px) {
+
+    .txt {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .wrap-5 p {
+        padding-bottom: 50px;
+    }
+
+    .row .col-t-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .row .col-t-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .row .col-t-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .row .col-t-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .row .col-t-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .row .col-t-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .row .col-t-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .row .col-t-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .row .col-t-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .row .col-t-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .row .col-t-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .row .col-t-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .row .col-m-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .row .col-m-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .row .col-m-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .row .col-m-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .row .col-m-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .row .col-m-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .row .col-m-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .row .col-m-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .row .col-m-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .row .col-m-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .row .col-m-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .row .col-m-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:460px) {
+
+    nav ul li a {
+        width: 90px;
+        margin-top: 30px;
+    }
+
+    .wrap-2 p {
+        font-size: 40px;
+    }
+
+    .wrap-3 p {
+        font-size: 15px;
+    }
+
+    .row .col-p-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .row .col-p-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .row .col-p-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .row .col-p-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+    .row .col-p-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .row .col-p-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .row .col-p-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .row .col-p-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .row .col-p-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .row .col-p-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .row .col-p-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .row .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+}
